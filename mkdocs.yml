@@ -1,0 +1,10 @@
+site_name: Mkdocs Bulma Classes Plugin
+site_description: Add support to Bulma css framework in Mkdocs
+site_url: https://daniele-tentoni.github.io/mkdocs-bulma-classes-plugin
+site_author: Daniele Tentoni
+
+repo_url: https://github.com/daniele-tentoni/mkdocs-bulma-classes-plugin
+edit_uri: 'edit/master/'
+
+nav:
+  - Home: index.md
