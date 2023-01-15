@@ -1,0 +1,31 @@
+{
+  "name": "mkdocs-bulma-classes-plugin",
+  "version": "0.1.0",
+  "description": "Add support to Bulma css framework in Mkdocs",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daniele-tentoni/mkdocs-bulma-classes-plugin.git"
+  },
+  "keywords": [
+    "Bulma",
+    "Mkdocs",
+    "Css"
+  ],
+  "author": "Daniele Tentoni <daniele.tentoni.1996@gmail.com> (https://github.com/daniele-tentoni)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/daniele-tentoni/mkdocs-bulma-classes-plugin/issues"
+  },
+  "homepage": "https://github.com/daniele-tentoni/mkdocs-bulma-classes-plugin#readme",
+  "devDependencies": {
+    "semantic-release": "^20.0.2",
+    "semantic-release-config-dt-python-poetry": "^1.0.0-beta.2"
+  }
+}
