@@ -204,20 +204,6 @@ i18n = ["babel (>=2.9.0)"]
 min-versions = ["babel (==2.9.0)", "click (==7.0)", "colorama (==0.4)", "ghp-import (==1.0)", "importlib-metadata (==4.3)", "jinja2 (==2.11.1)", "markdown (==3.2.1)", "markupsafe (==2.0.1)", "mergedeep (==1.3.4)", "packaging (==20.5)", "pyyaml (==5.1)", "pyyaml-env-tag (==0.1)", "typing-extensions (==3.10)", "watchdog (==2.0)"]
 
 [[package]]
-name = "mkdocs-bulma-theme"
-version = "0.1.0"
-description = "Another theme for Mkdocs leveraging use of Bulma css framework."
-category = "dev"
-optional = false
-python-versions = "^3.10"
-files = []
-develop = true
-
-[package.source]
-type = "directory"
-url = "../mkdocs-bulma-theme"
-
-[[package]]
 name = "mypy-extensions"
 version = "0.4.3"
 description = "Experimental type system extensions for programs checked with the mypy typechecker."
@@ -417,4 +403,4 @@ watchmedo = ["PyYAML (>=3.10)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "1de133728d85f654752b525cb691936ab84d141efaac2e3d67e0a8d7ae0e163d"
+content-hash = "fccef4f757f5332ccdccbac9c1e6a6966f4fd47674fd85b9e4418c2bd3c4b387"
