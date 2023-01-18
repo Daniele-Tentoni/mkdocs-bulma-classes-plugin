@@ -25,7 +25,20 @@
   },
   "homepage": "https://github.com/daniele-tentoni/mkdocs-bulma-classes-plugin#readme",
   "devDependencies": {
+    "@google/semantic-release-replace-plugin": "^1.2.0",
+    "@semantic-release/changelog": "^6.0.2",
+    "@semantic-release/commit-analyzer": "^9.0.2",
+    "@semantic-release/exec": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^8.0.7",
+    "@semantic-release/release-notes-generator": "^10.0.3",
     "semantic-release": "^20.0.2",
-    "semantic-release-config-dt-python-poetry": "^1.0.0-beta.2"
+    "semantic-release-config-dt-python-poetry": "^1.0.0-beta.2",
+    "semantic-release-license": "^1.0.3"
+  },
+  "release": {
+    "extends": [
+      "semantic-release-config-dt-python-poetry"
+    ]
   }
 }
