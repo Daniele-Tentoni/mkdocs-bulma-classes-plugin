@@ -8,3 +8,8 @@ edit_uri: 'edit/master/'
 
 nav:
   - Home: index.md
+  - Bulma:
+      - Elements:
+          - Title: bulma/elements/title.md
+      - Helpers:
+          - Typography: bulma/helpers/typography.md
