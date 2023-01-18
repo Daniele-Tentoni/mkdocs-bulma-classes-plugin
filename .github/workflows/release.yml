@@ -50,5 +50,5 @@ jobs:
         env:
           CI: true
           GH_TOKEN: "${{ secrets.GH_TOKEN }}"
-          GITHUB_TOKEN: "${{ secrets.GH_TOKEN }}"
+          GITHUB_TOKEN: "${{ github.token }}"
           POETRY_PYPI_TOKEN_PYPI: "${{ secrets.POETRY_PYPI_TOKEN_PYPI }}"
