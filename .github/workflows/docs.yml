@@ -1,6 +1,9 @@
 name: Deploy docs to Github Pages
 
-on: release
+on:
+  release:
+    types:
+      - "published"
 
 permissions:
   contents: read
@@ -16,13 +19,31 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3.3.0
+
+      - id: setup-python
+        uses: actions/setup-python@v4.4.0
         with:
-          ref: 12
-      - uses: actions/setup-python@v1
-      - uses: setup-poetry
-      - run: 
-          poetry install
-          poetry run python -m mkdocs build
+          python-version: "3.10"
+        
+      - uses: snok/install-poetry@v1.3.3
+        with:
+          virtualenvs-create: true
+          virtualenvs-in-project: true
+      
+      - name: Load cached venv
+        id: cached-poetry-dependencies
+        uses: actions/cache@v3.2.3
+        with:
+          path: .venv
+          key: venv-${{ runner.os }}-${{ steps.setup-python.outputs.python-version }}-${{ hashFiles('**/poetry.lock') }}
+
+      - name: Install dependencies
+        if: steps.cached-poetry-dependencies.outputs.cache-hit != 'true'
+        run: poetry install --no-interaction --no-root
+
+      - name: Build docs
+        run: poetry run python -m mkdocs build
+          
       - uses: actions/upload-pages-artifact@v1.0.7
         with:
           path: ./site
