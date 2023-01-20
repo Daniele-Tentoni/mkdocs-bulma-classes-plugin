@@ -4,7 +4,7 @@ site_url: https://daniele-tentoni.github.io/mkdocs-bulma-classes-plugin
 site_author: Daniele Tentoni
 
 repo_url: https://github.com/daniele-tentoni/mkdocs-bulma-classes-plugin
-edit_uri: 'edit/master/'
+edit_uri: 'edit/main/docs'
 
 nav:
   - Home: index.md
