@@ -1,4 +1,4 @@
-name: release
+name: Release
 
 on:
   push:
@@ -11,7 +11,7 @@ jobs:
     name: Release new config
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v3.3.0
         with:
           fetch-depth: 0
           token: ${{ secrets.GH_TOKEN }}
@@ -20,7 +20,7 @@ jobs:
         with:
           node-version: lts/*
 
-      - name: Set up python
+      - name: Setup python
         id: setup-python
         uses: actions/setup-python@v4.5.0
         with:
@@ -37,7 +37,7 @@ jobs:
         uses: actions/cache@v3.2.3
         with:
           path: .venv
-          key: venv-${{ runner.os }}-${{ steps.setup-python.outputs.python-version }}-${{ hashFiles('**/poetry.lock') }}
+          key: venv-${{ runner.os }}-${{ hashFiles('**/poetry.lock') }}
 
       - name: Install dependencies
         if: steps.cached-poetry-dependencies.outputs.cache-hit != 'true'
