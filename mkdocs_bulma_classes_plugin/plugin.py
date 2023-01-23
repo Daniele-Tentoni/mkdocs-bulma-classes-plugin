@@ -23,6 +23,7 @@ class BulmaClassesPlugin(BasePlugin):
         '<h5 id="([\w-]*)">': '<h5 id="\g<1>" class="title is-5 has-text-light">',
         '<h6 id="([\w-]*)">': '<h6 id="\g<1>" class="title is-6 has-text-light">',
         '<a href="(.*)">': '<a href="\g<1>" class="is-clickable has-text-link-light">',
+        "\n<ul>.*</ul>\n": '<div class="content">\g<0></div>',  # Look at https://regex101.com/r/X0PSlS/2 for unit tests
     }
 
     def __init__(self):
