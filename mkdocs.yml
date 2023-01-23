@@ -13,3 +13,9 @@ nav:
           - Title: bulma/elements/title.md
       - Helpers:
           - Typography: bulma/helpers/typography.md
+
+theme:
+    name: bulma
+
+plugins:
+    - bulma-classes

@@ -24,6 +24,7 @@ black = "^22.12.0"
 
 [tool.poetry.group.docs.dependencies]
 mkdocs = "^1.4.2"
+mkdocs-bulma-theme = "^1.0.0b2"
 
 [build-system]
 requires = ["poetry-core"]
