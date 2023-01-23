@@ -1,5 +1,6 @@
 import re
 from typing import Optional
+from mkdocs import utils
 from mkdocs.config import config_options
 from mkdocs.plugins import BasePlugin
 from mkdocs.structure.pages import Page
@@ -24,6 +25,7 @@ class BulmaClassesPlugin(BasePlugin):
         '<h6 id="([\w-]*)">': '<h6 id="\g<1>" class="title is-6 has-text-light">',
         '<a href="(.*)">': '<a href="\g<1>" class="is-clickable has-text-link-light">',
         "\n<ul>.*</ul>\n": '<div class="content">\g<0></div>',  # Look at https://regex101.com/r/X0PSlS/2 for unit tests
+        # '<code>.*</code>': '<div class="content">\n\g<0>\n</div>'
     }
 
     def __init__(self):
@@ -48,5 +50,8 @@ class BulmaClassesPlugin(BasePlugin):
         # Substitute any element that need HTML to be mapped.
         # Here we take all other simple Markdown elements with easy mapping to Bulma classes
         for key, value in self.regex_dict.items():
-            output = re.sub(re.compile(key), value, output)
+            if m := re.findall(key, output):
+                utils.log.debug(f"Found {key} in {page.title}: {m}")
+            regex = re.compile(key, re.MULTILINE | re.DOTALL)
+            output = re.sub(regex, value, output, 0)
         return output
