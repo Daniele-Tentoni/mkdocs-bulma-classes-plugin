@@ -1,16 +1,4 @@
-# Mkdocs Bulma Classes Plugin
-
-Add support to [Bulma CSS framework](https://bulma.io) in [Mkdocs](https://www.mkdocs.org).
-
-Inspired by [mkdocs-bootstrap-tables-plugin](https://github.com/byrnereese/mkdocs-bootstrap-tables-plugin/blob/master/mkdocs_bootstrap_tables_plugin/plugin.py).
-
-This plugin inject first in the Markdown of the page and then in the raw html elements produced by Mkdocs from Markdown all necessary classes for styling with Bulma framework. I'll try to follow in the most pedantic way the last [CommonMark](https://commonmark.org/) specification released before supporting other versions.
-
-**Table of Contents**:
-
-- [How to Install](#how-to-install)
-- [How to use](#how-to-use)
-- [See also](#see-also)
+# Getting Started
 
 ## How to Install
 
@@ -37,10 +25,6 @@ but enabling this plugin will produce this:
 
 necessary for Bulma to render this title:
 
-![Bulma title is-1](docs/img/bulma_heading_1.png)
+![Bulma title is-1](img/bulma_heading_1.png)
 
 For more info, look at [docs](https://daniele-tentoni.github.io/mkdocs-bulma-classes-plugin).
-
-## See also
-
-Take a look at my [Bulma Theme](https://github.com/daniele-tentoni/mkdocs-bulma-theme) for Mkdocs.

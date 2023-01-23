@@ -4,41 +4,35 @@ Add support to [Bulma CSS framework](https://bulma.io) in [Mkdocs](https://www.m
 
 Inspired by [mkdocs-bootstrap-tables-plugin](https://github.com/byrnereese/mkdocs-bootstrap-tables-plugin/blob/master/mkdocs_bootstrap_tables_plugin/plugin.py).
 
-This plugin inject in the raw html elements produced by Mkdocs from Markdown all necessary classes for styling with Bulma framework.
+This plugin inject first in the Markdown of the page and then in the raw html elements produced by Mkdocs from Markdown all necessary classes for styling with Bulma framework. I'll try to follow in the most pedantic way the last [CommonMark](https://commonmark.org/) specification released before supporting other versions.
 
-**Table of Contents**:
+In this doc you will find all supported Markdown tags, organized by corresponding Bulma style rule. This because when I want to design my doc I want to do it for my customers, not for me. My customers look at my HTML doc more frequently than the raw md doc so it's better for me look at the Bulma style class more useful for the content I want to give in my doc. For example: if I want to give the feeling of a title with a subtitle, I write this code:
 
-- [How to Install](#how-to-install)
-- [How to use](#how-to-use)
-- [See also](#see-also)
+    # Title
 
-## How to Install
+    ## Subtitle
 
-Use pip to install the plugin (or use your preferred dep manager for Python, like [Poetry](https://python-poetry.org/) for me):
+But what this look is:
 
-    pip install mkdocs-bulma-classes-plugin
+![Bulma Title with Subtitle but wrong](img/bulma_heading_1.png)
 
-and activate the plugin in your `mkdocs.yml` config file:
+When I was looking for this instead:
 
-    plugins:
-      - bulma-classes
+![Bulma Title with Subtitle right](img/bulma_heading_1.png)
 
-> If you have no `plugins` entry in your config file yet, you'll likely also want to add the `search` plugin. MkDocs enables it by default if there is no `plugins` entry set.
+So I have to write this code to get the looks I want:
 
-## How to use
+    Title
+    ===
 
-You doesn't need to do anything. When you build your docs with Mkdocs, after HTML page generation, this pluging inject in your tags the proper CSS class for Bulma. For example, your `# Heading 1` will produce the following HTML code:
+    Subtitle
+    ---
 
-    <h1 id="heading-1">Heading 1</h1>
+To get this result in the smallest click by click on my doc I've decided to use this path: from Bulma style I want to get to the Markdown I want to write.
 
-but enabling this plugin will produce this:
+## About
 
-    <h1 id="heading-1" class="title is-1">Heading 1</h1>
-
-necessary for Bulma to render this title:  
-![Bulma title is-1](img/bulma_heading_1.png)
-
-For more info, look at [docs](https://daniele-tentoni.github.io/mkdocs-bulma-classes-plugin).
+In this guide I'll cover next to nothing about the use of Bulma, since there is a beatiful documentation on their site. I'm focusing on the mapping from Bulma classes to Markdown tags you need to use in your documents to reach the most resembling result.
 
 ## See also
 
