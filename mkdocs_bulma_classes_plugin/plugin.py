@@ -16,12 +16,13 @@ class BulmaClassesPlugin(BasePlugin):
 
     regex_dict = {
         "<table>": '<table class="table">',
-        "<h1 id=\"(.*)\">": '<h1 id=\"\g<1>\" class="title is-1 has-text-light">',
-        "<h2 id=\"(.*)\">": '<h2 id=\"\g<1>\" class="title is-2 has-text-light">',
-        "<h3 id=\"(.*)\">": '<h3 id=\"\g<1>\" class="title is-3 has-text-light">',
-        "<h4 id=\"(.*)\">": '<h4 id=\"\g<1>\" class="title is-4 has-text-light">',
-        "<h5 id=\"(.*)\">": '<h5 id=\"\g<1>\" class="title is-5 has-text-light">',
-        "<h6 id=\"(.*)\">": '<h6 id=\"\g<1>\" class="title is-6 has-text-light">',
+        '<h1 id="([\w-]*)">': '<h1 id="\g<1>" class="title is-1 has-text-light">',
+        '<h2 id="([\w-]*)">': '<h2 id="\g<1>" class="title is-2 has-text-light">',
+        '<h3 id="([\w-]*)">': '<h3 id="\g<1>" class="title is-3 has-text-light">',
+        '<h4 id="([\w-]*)">': '<h4 id="\g<1>" class="title is-4 has-text-light">',
+        '<h5 id="([\w-]*)">': '<h5 id="\g<1>" class="title is-5 has-text-light">',
+        '<h6 id="([\w-]*)">': '<h6 id="\g<1>" class="title is-6 has-text-light">',
+        '<a href="(.*)">': '<a href="\g<1>" class="is-clickable has-text-link-light">',
     }
 
     def __init__(self):
