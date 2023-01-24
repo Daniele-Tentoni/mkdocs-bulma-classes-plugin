@@ -1,3 +1,10 @@
+# [1.0.0-beta.3](https://github.com/daniele-tentoni/mkdocs-bulma-classes-plugin/compare/v1.0.0-beta.2...v1.0.0-beta.3) (2023-01-24)
+
+
+### Bug Fixes
+
+* don't overwrite the table class in table elements ([70d371b](https://github.com/daniele-tentoni/mkdocs-bulma-classes-plugin/commit/70d371be005bbd5c3d0480a9b362c3c1dff7cc4b))
+
 # [1.0.0-beta.2](https://github.com/daniele-tentoni/mkdocs-bulma-classes-plugin/compare/v1.0.0-beta.1...v1.0.0-beta.2) (2023-01-23)
 
 
