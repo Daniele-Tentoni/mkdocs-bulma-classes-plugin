@@ -17,7 +17,7 @@ class BulmaClassesPlugin(BasePlugin):
 
     regex_dict = {
         '<table (id="\w*")? class="((?!table).*)">': '<table \g<1> class="table \g<2>">', # Look at https://regex101.com/r/3UZHgz/1 for unit tests
-        '<h1 id="([\w-]*)">': '<h1 id="\g<1>" class="title is-1 has-text-light">',
+        '<h1 id=\"([\w-]*)\" class=\"(?![(title)|(is\-1)])([\w-]*)\">': '<h1 id="\g<1>" class="title is-1 has-text-light \g<2>">', # Look at https://regex101.com/r/bxQBvm/3 for unit tests
         '<h2 id="([\w-]*)">': '<h2 id="\g<1>" class="title is-2 has-text-light">',
         '<h3 id="([\w-]*)">': '<h3 id="\g<1>" class="title is-3 has-text-light">',
         '<h4 id="([\w-]*)">': '<h4 id="\g<1>" class="title is-4 has-text-light">',
