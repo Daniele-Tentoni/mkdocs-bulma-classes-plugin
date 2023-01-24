@@ -1,3 +1,10 @@
+# [1.0.0-beta.4](https://github.com/daniele-tentoni/mkdocs-bulma-classes-plugin/compare/v1.0.0-beta.3...v1.0.0-beta.4) (2023-01-24)
+
+
+### Bug Fixes
+
+* don't overwrite title class on heading 1 ([3fd0be9](https://github.com/daniele-tentoni/mkdocs-bulma-classes-plugin/commit/3fd0be9eefe4c169d4205dd57eb5cd1779c518c0))
+
 # [1.0.0-beta.3](https://github.com/daniele-tentoni/mkdocs-bulma-classes-plugin/compare/v1.0.0-beta.2...v1.0.0-beta.3) (2023-01-24)
 
 
