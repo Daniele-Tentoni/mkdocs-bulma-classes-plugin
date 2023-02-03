@@ -1,3 +1,10 @@
+# [1.0.0-beta.6](https://github.com/daniele-tentoni/mkdocs-bulma-classes-plugin/compare/v1.0.0-beta.5...v1.0.0-beta.6) (2023-02-03)
+
+
+### Bug Fixes
+
+* tables accept spaces in tags ([6410dac](https://github.com/daniele-tentoni/mkdocs-bulma-classes-plugin/commit/6410dac61fb2c182e71b190ab780b36811c1c9ad))
+
 # [1.0.0-beta.5](https://github.com/daniele-tentoni/mkdocs-bulma-classes-plugin/compare/v1.0.0-beta.4...v1.0.0-beta.5) (2023-02-03)
 
 
