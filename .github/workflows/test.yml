@@ -1,0 +1,41 @@
+name: Continuous Testing
+
+on:
+  push
+
+jobs:
+  test:
+    name: Test each commit
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3.3.0
+
+      - uses: actions/setup-python@v4.5.0
+        with:
+          python-version: "3.10"
+
+      - name: Setup Poetry
+        uses: snok/install-poetry@v1.3.3
+        with:
+          virtualenvs-create: true
+          virtualenvs-in-project: true
+
+      - name: Load cached venv
+        id: cached-poetry-dependencies
+        uses: actions/cache@v3.2.3
+        with:
+          path: .venv
+          key: venv-${{ runner.os }}-${{ hashFiles('**/poetry.lock') }}
+
+      - name: Install dependencies
+        if: steps.cached-poetry-dependencies.outputs.cache-hit != 'true'
+        run: poetry install --no-interaction --no-root
+
+      - name: Run tests
+        run: >-
+          poetry run \
+          python -m \
+          pytest tests \
+          --doctest-modules \
+          --cov-report term-missing:skip-covered \
+          --cov mkdocs_bulma_classes_plugin
