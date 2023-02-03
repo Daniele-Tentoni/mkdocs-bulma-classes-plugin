@@ -116,18 +116,30 @@ class TableRegex(Regex):
     r"""
     Define the regex that produce the Bulma Table.
 
-    Look at https://regex101.com/r/eHOik3/1 for unit tests.
+    Look at https://regex101.com/r/eHOik3/3 for unit tests.
 
-    A simple table
-    >>> TableRegex().search('<table id=\"this\"><thead><th>Ok</th></thead><><tr><td>Ok</td></tr></</table>') is None
+    Match with a simple table tag
+    >>> TableRegex().search('<table>') is None
     False
+
+    Match with a table tag with id attr
+    >>> TableRegex().search('<table id="table">') is None
+    False
+
+    Match with a table tag with class attr without table class inside
+    >>> TableRegex().search('<table class="striped">') is None
+    False
+
+    Don't match with a table tag with class attr with table class inside
+    >>> TableRegex().search('<table class="table">') is None
+    True
     """
 
     def __init__(self) -> None:
         """Instance the regex."""
         super().__init__(
-            r"<table (id=\"\w*\")?( class=\"((?!table).*)\")?>",
-            r'<table \g<1> class="table \g<2>">',
+            r"<table(\sid=\"\w*\")?(\s?class=\"((?!table).*)\")?>",
+            r'<table\g<1> class="table \g<3>">',
             re.MULTILINE | re.DOTALL,
         )
 
