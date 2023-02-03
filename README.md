@@ -1,5 +1,7 @@
 # Mkdocs Bulma Classes Plugin
 
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+
 Add support to [Bulma CSS framework](https://bulma.io) in [Mkdocs](https://www.mkdocs.org).
 
 Inspired by [mkdocs-bootstrap-tables-plugin](https://github.com/byrnereese/mkdocs-bootstrap-tables-plugin/blob/master/mkdocs_bootstrap_tables_plugin/plugin.py).
@@ -44,3 +46,7 @@ For more info, look at [docs](https://daniele-tentoni.github.io/mkdocs-bulma-cla
 ## See also
 
 Take a look at my [Bulma Theme](https://github.com/daniele-tentoni/mkdocs-bulma-theme) for Mkdocs.
+
+## Contributing
+
+Contributions are welcome.
