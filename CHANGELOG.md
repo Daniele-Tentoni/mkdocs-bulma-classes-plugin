@@ -1,3 +1,10 @@
+# [1.0.0-beta.5](https://github.com/daniele-tentoni/mkdocs-bulma-classes-plugin/compare/v1.0.0-beta.4...v1.0.0-beta.5) (2023-02-03)
+
+
+### Bug Fixes
+
+* create new Regex class ([5e85996](https://github.com/daniele-tentoni/mkdocs-bulma-classes-plugin/commit/5e859963f4a17b045ed31ea74e5eca1513a50595))
+
 # [1.0.0-beta.4](https://github.com/daniele-tentoni/mkdocs-bulma-classes-plugin/compare/v1.0.0-beta.3...v1.0.0-beta.4) (2023-01-24)
 
 
