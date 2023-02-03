@@ -21,4 +21,14 @@ repos:
   - repo: https://github.com/pycqa/pydocstyle
     rev: 6.3.0  # pick a git hash / tag to point to
     hooks:
-    -   id: pydocstyle
+      - id: pydocstyle
+  - repo: local
+    hooks:
+      - id: pytests
+        name: Run Pytest on each file
+        entry: poetry run python -m pytest
+        language: system
+        types: [python]
+        args: [--doctest-modules, tests]
+        pass_filenames: false
+        verbose: true
