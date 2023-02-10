@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "mkdocs-bulma-classes-plugin"
-version = "1.0.0-beta.6"
+version = "1.0.0-beta.7"
 description = "Add support to Bulma css framework in Mkdocs"
 authors = ["Daniele Tentoni <daniele.tentoni.1996@gmail.com>"]
 license = "MIT"

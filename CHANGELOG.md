@@ -1,3 +1,15 @@
+# [1.0.0-beta.7](https://github.com/daniele-tentoni/mkdocs-bulma-classes-plugin/compare/v1.0.0-beta.6...v1.0.0-beta.7) (2023-02-10)
+
+
+### Bug Fixes
+
+* add TagRegex to plugin process ([a14e5b8](https://github.com/daniele-tentoni/mkdocs-bulma-classes-plugin/commit/a14e5b85005a7c41251216ae2d0230721441c33a))
+
+
+### Features
+
+* add bulma tag regex ([50a9fa0](https://github.com/daniele-tentoni/mkdocs-bulma-classes-plugin/commit/50a9fa0b1e36122cb75425eacbebed7829f184cb))
+
 # [1.0.0-beta.6](https://github.com/daniele-tentoni/mkdocs-bulma-classes-plugin/compare/v1.0.0-beta.5...v1.0.0-beta.6) (2023-02-03)
 
 
