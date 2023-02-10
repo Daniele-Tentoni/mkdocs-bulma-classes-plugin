@@ -12,6 +12,7 @@ nav:
   - Markdown: markdown.md
   - Bulma:
       - Elements:
+          - Tag: bulma/elements/tag.md
           - Title: bulma/elements/title.md
       - Helpers:
           - Typography: bulma/helpers/typography.md
