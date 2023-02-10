@@ -14,6 +14,7 @@ from mkdocs_bulma_classes_plugin.regexs.regex import (
     TableRegex,
     TitleRegex,
     UnorderedListRegex,
+    TagRegex,
 )
 
 
@@ -22,6 +23,7 @@ class BulmaClassesPlugin(BasePlugin):
 
     markdown_regexes: List[Regex] = [
         TitleRegex(),
+        TagRegex(),
     ]
 
     regex_dict: List[Regex] = [
