@@ -32,10 +32,10 @@ jobs:
         run: poetry install --no-interaction --no-root --with test
 
       - name: Run tests
-        run: >-
-          poetry run \
-          python -m \
-          pytest tests \
-          --doctest-modules \
-          --cov-report term-missing:skip-covered \
+        run: >
+          poetry run
+          python -m
+          pytest tests
+          --doctest-modules
+          --cov-report term-missing:skip-covered
           --cov mkdocs_bulma_classes_plugin
