@@ -1,4 +1,10 @@
-"""This module contains the Regex base class."""
+"""
+This module contains the Regex base class.
+
+In last releases, in this module are spawned many regexes classes that extends
+the base one. Each class has his own doc-test cases inside that run in
+continuous integration.
+"""
 
 from re import Match, Pattern
 import re
@@ -58,7 +64,9 @@ class HeadingRegex(Regex):
     """
     Define the regex that produce the Bulma First Level Title.
 
-    The regex looks for an id (produced from mkdocs due to markdown conversion) and any class produced from this plugin in a previous event hook other than title or is-X.
+    The regex looks for an id (produced from mkdocs due to markdown
+    conversion) and any class produced from this plugin in a previous event
+    hook other than title or is-X.
 
     Look at https://regex101.com/r/bxQBvm/3 for unit tests.
 
@@ -73,6 +81,9 @@ class HeadingRegex(Regex):
     Headings with other class than title will match
     >>> HeadingRegex(1).search('<h1 id="title" class="has-text-light">') is not None
     True
+
+    In tests package you will find a property based testing through every
+    supported heading size.
     """
 
     def __init__(self, level: int = 1):
