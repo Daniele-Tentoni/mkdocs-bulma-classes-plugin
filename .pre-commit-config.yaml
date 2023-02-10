@@ -29,6 +29,6 @@ repos:
         entry: poetry run python -m pytest
         language: system
         types: [python]
-        args: [--doctest-modules, tests]
+        args: [--doctest-modules]
         pass_filenames: false
         verbose: true
