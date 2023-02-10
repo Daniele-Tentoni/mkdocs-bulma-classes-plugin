@@ -173,3 +173,21 @@ class LinkRegex(Regex):
             r'<a href="\g<1>" class="is-clickable has-text-link-light">',
             re.MULTILINE | re.DOTALL,
         )
+
+
+class TagRegex(Regex):
+    r"""
+    Define the regex that produce the Bulma tag.
+
+    A simple tag
+    >>> TagRegex().search(':tag content: :other:') is None
+    False
+    """
+
+    def __init__(self) -> None:
+        """Instance the regex."""
+        super().__init__(
+            r":([\w\s]*):",
+            r'<span class="tag">\g<1></span>',
+            re.MULTILINE | re.DOTALL,
+        )
