@@ -45,7 +45,7 @@ jobs:
       - name: Build docs
         run: poetry run python -m mkdocs build
 
-      - uses: actions/upload-pages-artifact@v1.0.7
+      - uses: actions/upload-pages-artifact@v1.0.8
         with:
           path: ./site
 
