@@ -11,7 +11,7 @@ jobs:
     name: Release new config
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3.5.3
+      - uses: actions/checkout@v4.1.0
         with:
           fetch-depth: 0
           token: ${{ secrets.GH_TOKEN }}
