@@ -487,14 +487,14 @@ min-versions = ["babel (==2.9.0)", "click (==7.0)", "colorama (==0.4)", "ghp-imp
 
 [[package]]
 name = "mkdocs-bulma-theme"
-version = "1.0.0b2"
+version = "1.0.0b3"
 description = "Another theme for Mkdocs leveraging use of Bulma css framework."
 category = "dev"
 optional = false
 python-versions = ">=3.10,<4.0"
 files = [
-    {file = "mkdocs_bulma_theme-1.0.0b2-py3-none-any.whl", hash = "sha256:5b7915fe567b8e81d5bec58a030396d1f9a70e1da4dcf8f7d33f559b1ed655c5"},
-    {file = "mkdocs_bulma_theme-1.0.0b2.tar.gz", hash = "sha256:be40dc07578da767a534df29578dfadcef6d3d92440fab2866ced2409d2ebc72"},
+    {file = "mkdocs_bulma_theme-1.0.0b3-py3-none-any.whl", hash = "sha256:69c064d39303b43297fa3bb3c35006346fcdbe3df0ace2f26969a8c0153cd0e5"},
+    {file = "mkdocs_bulma_theme-1.0.0b3.tar.gz", hash = "sha256:ee276d912e79c032d351fa0e726df82bc4866e94b59fc42058b81d82fd06a7d0"},
 ]
 
 [[package]]
@@ -866,4 +866,4 @@ watchmedo = ["PyYAML (>=3.10)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "9882c4d616a99831e63e8d43c93aae967344c14ec28c40ecdc89e089996efe56"
+content-hash = "a5fa2767357e48f5585c9c50071f9d34b22d81c726b1b5fe30e60ac36cae9f05"
