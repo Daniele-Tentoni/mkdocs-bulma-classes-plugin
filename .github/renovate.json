@@ -3,7 +3,7 @@
   "extends": [
     "github>daniele-tentoni/my-renovate-config"
   ],
-  "automerge": false,
+  "automerge": true,
   "baseBranches": [
     "beta"
   ]
