@@ -32,7 +32,7 @@
     "@semantic-release/git": "^10.0.1",
     "@semantic-release/github": "^9.0.0",
     "@semantic-release/release-notes-generator": "^11.0.0",
-    "semantic-release": "^22.0.0",
+    "semantic-release": "^23.0.0",
     "semantic-release-config-dt-python-poetry": "^2.0.0",
     "semantic-release-license": "^1.0.3"
   },
